@@ -1,0 +1,226 @@
+@font-face {
+  font-family: Litera;
+  src: url('../fonts/Litera-Heavy.ttf');
+}
+
+/* desktop 1280 */
+
+body {
+    background-color: #9f4b70;
+}
+
+/* lyrics */
+.lyrics-container {
+  position: fixed;
+  margin-left: 45px;
+  margin-top: 60px;
+}
+
+.lyric {
+  margin-bottom: 25px;
+}
+
+/* desktop height: 2.5x */
+.height-23 {
+  height: 57.5px;
+}
+
+.height-24 {
+  height: 60px;
+}
+
+.height-19 {
+  height: 47.5px;
+}
+
+/* headphones */
+.headphones {
+  position: fixed;
+  overflow: hidden;
+  width: 38%;
+  right: 0;
+  top: 50px;
+}
+
+#headphone-player:hover, #controls:hover {
+cursor: pointer;
+}
+
+/* ipod */
+.ipod-container {
+  position: fixed;
+  bottom: -30px;
+  right: 300px;
+  width: 330px;
+  transform: rotate(-8deg);
+}
+
+/* signature */
+.signature {
+  position: fixed;
+  margin-left: 45px;
+  /* margin-bottom: 50px; */
+  bottom: 60px;
+  width: 300px;
+}
+
+/* description */
+.event {
+  position: fixed;
+  bottom: 70px;
+  margin-left: 325px;
+}
+
+h2, a, a:visited {
+  font-family: 'Litera', Helvetica, sans-serif;
+  color: #311423;
+  letter-spacing: 1px;
+}
+
+/* media queries (tablet and mobile) */
+
+@media only screen and (max-width: 1440px) {
+                /*lyrics */
+                .lyrics-container {
+                  position: fixed;
+                  margin-left: 50px;
+                  margin-top: 25px;
+                }
+
+                .lyric {
+                  margin-bottom: 7px;
+                }
+
+                /* desktop height: 2.25x */
+                .height-23 {
+                  height: 51.75px;
+                }
+
+                .height-24 {
+                  height: 54px;
+                }
+
+                .height-19 {
+                  height: 42.75px;
+                }
+
+                /* headphones */
+                .headphones {
+                  position: fixed;
+                  overflow: hidden;
+                  width: 45%;
+                  right: 0px;
+                  top: 425px;
+                }
+
+                #headphone-player:hover, #controls:hover {
+                cursor: pointer;
+                }
+
+                /* ipod */
+                .ipod-container {
+                  position: fixed;
+                  bottom: -30px;
+                  left: 50px;
+                  width: 260px;
+                  transform: rotate(-8deg);
+                }
+
+                /* signature */
+                .signature {
+                  position: fixed;
+                  /* margin-bottom: 50px; */
+                  right: 215px;
+                  bottom: 80px;
+                  width: 200px;
+                }
+
+                /* description */
+                .event {
+                  position: fixed;
+                  bottom: 20px;
+                  right: 50px;
+                }
+
+                h2, a, a:visited {
+                  font-family: 'Litera', Helvetica, sans-serif;
+                  color: #311423;
+                  letter-spacing: 1px;
+                  text-align: right;
+                }
+
+              
+}
+
+@media only screen and (max-width: 730px) {
+                /*lyrics */
+                .lyrics-container {
+                  position: fixed;
+                  margin-left: 10px;
+                  margin-top: 10px;
+                }
+
+                .lyric {
+                  margin-bottom: 8px;
+                }
+
+                /* desktop height: 1x */
+                .height-23 {
+                  height: 23px;
+                }
+
+                .height-24 {
+                  height: 24px;
+                }
+
+                .height-19 {
+                  height: 19px;
+                }
+
+                /* headphones */
+                .headphones {
+                  position: fixed;
+                  overflow: hidden;
+                  width: 50%;
+                  right: 0px;
+                  top: 250px;
+                }
+
+                #headphone-player:hover, #controls:hover {
+                cursor: pointer;
+                filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.5));
+              }
+
+                /* ipod */
+                .ipod-container {
+                  position: fixed;
+                  bottom: -30px;
+                  left: 0px;
+                  width: 170px;
+                  transform: rotate(-8deg);
+                }
+
+                /* signature */
+                .signature {
+                  position: fixed;
+                  /* margin-bottom: 50px; */
+                  right: 10px;
+                  bottom: 80px;
+                  width: 100px;
+                }
+
+                /* description */
+                .event {
+                  position: fixed;
+                  bottom: 5px;
+                  right: 20px;
+                }
+
+                h2, a, a:visited {
+                  font-family: 'Litera', Helvetica, sans-serif;
+                  color: #311423;
+                  letter-spacing: 1px;
+                  text-align: right;
+                  font-size: 12px;
+                }
+}
