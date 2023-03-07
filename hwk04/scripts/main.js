@@ -1,8 +1,8 @@
 var myAudio = document.getElementById("song");
 var isPlaying = false;
 
-const headphone = document.querySelector('#headphone-player');
-const ipod = document.querySelector('#controls');
+// const headphone = document.querySelector('#headphone-player');
+// const ipod = document.querySelector('#controls');
 
 
 function togglePlay() {
