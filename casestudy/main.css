@@ -1,27 +1,146 @@
+@font-face {
+  font-family: 'CircularStd-Book';
+  src: url('fonts/CircularStd-Book.otf');
+}
+
+@font-face {
+  font-family: 'CircularStd-Bold';
+  src: url('fonts/CircularStd-Bold.otf');
+}
+
+body {
+	background: linear-gradient(to bottom, #121112, #242424);
+	background-size: 400% 400%;
+  color: white;
+	animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+
 .case-study {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
   }
   
   .hero-image {
-    background-image: url('hero-image.jpg');
+    background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
     margin-bottom: 20px;
+    border-radius: 20px;
   }
   
   .content {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
+    font-family: 'CircularStd-Book';
+    letter-spacing: 1px;
   }
   
   .content h2 {
-    font-size: 24px;
+    font-family: 'CircularStd-Bold','Sans-serif';
+    /* letter-spacing: 2px; */
+    font-size: 28px;
     margin-top: 40px;
     margin-bottom: 20px;
   }
+
+  #first {
+    color: #8980ed;
+  }
+
+  #second {
+    color: #a386e6;
+  }
+
+  #third {
+    color: #B386E1;
+  }
+
+  #fourth {
+    color: #B680D6;
+  }
+
+  #fifth {
+    color: #bf6ebb;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    width: 40%;
+    height: auto;
+    margin: 5px;
+    border-radius: 15px;
+  }
+
+  .button {
+    text-decoration: none;
+    position: relative;
+    font-family: 'CircularStd-Bold', 'sans-serif';
+    color: #F7F7F7;
+    background-color: #AE2996;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    text-decoration: none;
+
+}
+
+.button h2 {
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.button a {
+  text-decoration: none;
+
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  text-decoration: none;
+  color: white;
+}
+
+
+  
+  @media (max-width: 768px) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container img {
+      width: 100%;
+    }
+  }
+  
+
   
   @media (max-width: 767px) {
     .hero-image {
