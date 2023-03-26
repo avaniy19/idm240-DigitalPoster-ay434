@@ -162,13 +162,38 @@ body {
 }
 
 /* headphones */
-.headphones {
-  position: fixed;
-  overflow: hidden;
-  width: 38%;
-  right: 0;
-  top: 50px;
+
+.headphones-container {
+  overflow: visible;
+  z-index: -1;
 }
+
+.headphones {
+  overflow: visible;
+  z-index: -1;
+  position: fixed;
+  /* overflow: hidden; */
+  width: 38%;
+  left: 0;
+  top: 50px;
+
+    animation: pulse 1s ease-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
 
 #headphone-player:hover, #controls:hover {
 cursor: pointer;
@@ -206,6 +231,9 @@ h2, a, a:visited {
   letter-spacing: 2px;
   line-height: 125%;
 }
+
+/* just for submission */
+
 
 /* media queries (tablet and mobile) */
 
